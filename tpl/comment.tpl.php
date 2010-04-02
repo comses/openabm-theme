@@ -1,5 +1,5 @@
 <?php
-// $Id: comment.tpl.php,v 1.7 2008/01/04 19:24:23 goba Exp $
+// $Id$
 ?>
 <!-- comments.tpl.php -->
 <h3>Comments</h3>
