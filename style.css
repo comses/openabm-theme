@@ -1,0 +1,122 @@
+/* $Id: style.css,v 1.23 2007/12/17 15:05:09 goba Exp $ */
+/*
+Open ABM
+
+Colors:
+light green: #CADCA7
+dark green: #7F9E56
+blue: #342F65
+yellow: #F6FF97
+dark dark green for text: #718B4B
+
+
+*/
+
+
+/* - Default Styles - */
+* { margin: 0; padding: 0; font: normal 12px Verdana; color: #555; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+li { list-style: none; }
+a img { border: 0; }
+a { text-decoration: none; color: #718B4B;}
+p { line-height: 20px; margin-bottom: 15px; }
+
+/* General syles */
+body { background: #7F9E56 url('images/bgGrad.jpg') top left repeat-x;}
+h1 { font-weight: bold; text-align: center;  } /* by rule should be only used once */
+h2, h2 a { font-weight: bold; color: #342F65; font-size: 15px; margin-bottom: 10px;} 
+h3, h3 a { font-weight: bold; font-size: 13px; color: #718B4B; margin-top: 15px; }
+h4, h4 a { font-weight: bold; color: #211E40; font-size: 12px; margin: 5px 0 5px 0;} 
+input { border: solid 1px #CCC; padding: 3px; font-size: 13px; }
+ul { margin: 8px 0 8px 15px; }
+li { margin: 5px 0; }
+dl { margin-top: 20px}
+dd { margin-left: 15px; margin-bottom: 20px;}
+dd p, dd { line-height: 20px;  }
+dd p + p { margin: 10px 0 0 0;}
+dt { font-weight: bold; font-style: italic; margin-bottom: 10px; color: #211E40;}
+
+/* set up the main layout design - the shell */
+.Wrapper { width: 900px; overflow: hidden;  margin: 0 auto 0 auto; background: transparent url('images/bgShadow.png') top right repeat-y; padding: 0 75px;}
+.MainContent { background: #FFF; }
+.Base { height: 100px; width: 1050px; margin: 0 auto 0 auto; background: transparent url('images/bgShadowBottom.png') top center no-repeat; }
+.hrLine { height: 1px; margin: 0 50px; background: #CCC; }
+.Content { overflow: hidden;   }
+.LeftColumn { float: left; padding: 20px 15px 25px 25px; }
+.MainColumn {  padding: 0 25px 25px 0; overflow: hidden; }
+
+
+/* Left nav */
+.leftNav { margin: 0; }
+.leftNav li { margin: 0; }
+.leftNav li a { margin: 0 0 1px 0; width: 170px; font-size: 13px; display: block; padding: 10px; border-left: solid 10px #CADCA7; background: #E6E6E6 url('images/navCorner.png') top right no-repeat; color: #505050;  }
+.leftNav li a:hover, .leftNav li.activeNav a { border-left: solid 10px #7F9E56; background: #969696 url('images/navCorner.png') bottom right no-repeat; color: #F6FF97; }
+.LeftColumn p { margin: 0 0 20px 0; text-align: right;  }
+
+/* Main Content Home Page */
+.MainColumnLeft { width: 310px; float: left; margin-right: 15px; }
+.MainColumnLeft .Welcome { background: #E6F1D0; padding: 10px; border: dashed 1px #CCC; margin-bottom: 20px; }
+.MainColumnLeft .Welcome h2 { float: left; margin: 0 10px 0 0; color: #718B4B; }
+.GeneralBox { margin-bottom: 20px; }
+.GeneralBox p { margin-left: 10px; }
+.MainColumnRight { float: left; width: 310px; }
+
+.FeaturedModel {  margin-bottom: 20px; }
+.FeaturedModel img { float: right; padding: 0 0 10px 10px; }
+.FeaturedModel div { border: solid 1px #718B4B; border-width: 0 1px; padding: 0 12px; }
+.FeaturedModel .FeaturedFooter { height: 14px; background: url('images/featureLower.gif') top left no-repeat; margin: 0; }
+.FeaturedModel h2 { background: url('images/featureUpper.gif') 0 10px no-repeat; margin: 0; padding-left: 12px; height: 22px }
+
+/* top nav tabs */
+.TopNav { overflow: hidden; padding: 0 25px 0 0; height: 60px; }
+.TopNav ul { float: right; margin: 0; }
+.TopNav li { float: left; margin: 0; }
+.TopNav a { display: block; height: 26px; width:71px; margin-left: 1px;  }
+.TopNav a.home { background: url('images/navBar.gif') bottom left no-repeat; }
+.TopNav a.home:hover { background: url('images/navBar.gif') top left no-repeat; }
+.TopNav a.about { background: url('images/navBar.gif') bottom center no-repeat; }
+.TopNav a.about:hover { background: url('images/navBar.gif') top center no-repeat; }
+.TopNav a.contact { background: url('images/navBar.gif') bottom right no-repeat; }
+.TopNav a.contact:hover { background: url('images/navBar.gif') top right no-repeat; }
+.TopNav a span { display: none; }
+
+/* Header section */
+.Header { overflow: hidden; }
+.Logo { padding: 50px 0 20px 50px; float: left;  }
+.Logo a { display: block; }
+.Logo p { margin: 20px 0 0 0; color: #342F65; font-size: 13px; }
+.Logo h1 span { display: none; }
+.Search { padding: 50px 50px 20px 0; float: left;  }
+.Search p { text-align: right; }
+.Search input { margin-right: 5px; }
+.Search input.submit { margin: 0; padding: 2px; }
+
+
+/* Footer */
+.Footer { overflow: hidden; padding: 25px 25px 0 25px; }
+.Footer ul { float: left; margin: 0; }
+.Footer li { float: left; margin: 0; padding-right: 25px;}
+.Footer p { text-align: right; font-size: 10px; padding-top: 10px; }
+.Footer .imgAlignTop { padding-top: 10px; }
+
+/* General Node */
+.node .nodeImage { text-align: center; }
+
+/* Attachments */
+.attachments a { display: block; font-weight: bold; font-size: 11px;}
+.attachments p { padding: 0 0 0 20px; margin: 0 0 6px 10px; font-size: 9px;  }
+.attachments .pdf { background: transparent url('images/fileIcons/application-pdf.png') 0 3px no-repeat; }
+.attachments .excel { background: transparent url('images/fileIcons/x-office-spreadsheet.png') 0 3px no-repeat; }
+.attachments .doc { background: transparent url('images/fileIcons/x-office-document.png') 0 3px no-repeat; }
+.attachments .zip { background: transparent url('images/fileIcons/package-x-generic.png') 0 3px no-repeat; }
+.attachments .js { background: transparent url('images/fileIcons/text-x-script.png') 0 3px no-repeat; }
+.attachments .image { background: transparent url('images/fileIcons/image-x-generic.png') 0 3px no-repeat; }
+.attachments .general { background: transparent url('images/fileIcons/text-plain.png') 0 3px no-repeat; }
+.attachments .audio { background: transparent url('images/fileIcons/audio-x-generic.png') 0 3px no-repeat; }
+.attachments .video { background: transparent url('images/fileIcons/video-x-generic.png') 0 3px no-repeat;}
+.attachments .html { background: transparent url('images/fileIcons/text-html.png') 0 3px no-repeat;}
+.attachments .ppt { background: transparent url('images/fileIcons/x-office-presentation.png') 0 3px no-repeat;}
+
+
+
