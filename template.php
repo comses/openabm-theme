@@ -98,7 +98,7 @@ if (theme_get_setting('openabm_fixed')) {
 
 //drupal_add_js(drupal_get_path('theme', 'openabm') .'/includes/openabm.js', 'theme');
 //drupal_add_js(drupal_get_path('theme', 'openabm') .'/includes/niftycube.js', 'theme');
-drupal_add_js(drupal_get_path('theme', 'openabm') .'/includes/zeroclipboard/ZeroClipboard.js', 'theme');
+//drupal_add_js(drupal_get_path('theme', 'openabm') .'/includes/zeroclipboard/ZeroClipboard.js', 'theme');
 
 /**
  * Implementation of HOOK_theme().
@@ -137,6 +137,17 @@ function openabm_lt_loggedinblock()
 {
 	global $user;
 	return check_plain($user->name) .' | ' . l(t('Log Out'), 'logout');
+}
+
+/*
+ * Remove the Track tab for all users.
+ */
+function openabm_menu_local_task($link, $active = FALSE) {
+  if (strpos($link,'track')) {
+    return '';
+  } else {
+      return '<li '. ($active ? 'class="active" ' : '') .'>'. $link ."</li>\n";
+  }
 }
 
 /**
