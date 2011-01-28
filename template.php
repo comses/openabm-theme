@@ -172,11 +172,13 @@ function openabm_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/*
 function openabm_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  if ($hook == 'page' && arg(0) == 'user') {
+    $vars['tabs'] = str_replace('View</a>', 'Profile</a>', $vars['tabs']);
+  }
 }
-// */
+*/
 
 /**
  * Override or insert variables into the node templates.

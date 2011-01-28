@@ -46,7 +46,7 @@
  * @see template_preprocess_search_result()
  */
 ?>
-<?php if ($info_split['type'] = 'model') : ?>
+<?php if ($info_split['type'] == 'Model') : ?>
   <dt class="title">
     <a href="/model/<?php print $result['node']->field_model_uri[0]['value']; ?>"><?php print $title; ?></a>
   </dt>
