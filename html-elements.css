@@ -138,9 +138,14 @@
     margin-bottom: 0.5em;
   }
 
-  ul, ol, dl, pre, table, fieldset, blockquote
+  ul, ol, dl, pre, fieldset, blockquote
   {
     margin: 1em 1em 1em 1.5em;
+  }
+
+  table
+  {
+    margin: 0;
   }
 
   .block h2

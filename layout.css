@@ -139,17 +139,17 @@
   .no-sidebars #content
   {
     float: left;
-    width: 960px;
+    width: 980px;
     margin-left: 0;
-    margin-right: -960px; /* Negative value of #content's width + left margin. */
+    margin-right: -980px; /* Negative value of #content's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
   }
 
   .sidebar-left #content
   {
-    width: 710px;
-    margin-left: 250px; /* The width of #sidebar-left. */
-    margin-right: -960px; /* Negative value of #content's width + left margin. */
+    width: 730px;
+    margin-left: 230px; /* The width of #sidebar-left. */
+    margin-right: -980px; /* Negative value of #content's width + left margin. */
   }
 
   .sidebar-right #content
@@ -162,7 +162,7 @@
   .two-sidebars #content
   {
     width: 510px;
-    margin-left: 250px; /* The width of #sidebar-left */
+    margin-left: 230px; /* The width of #sidebar-left */
     margin-right: -760px; /* Negative value of #content's width + left margin. */
   }
 
@@ -234,9 +234,9 @@
   #sidebar-left
   {
     float: left;
-    width: 250px;
+    width: 230px;
     margin-left: 0;
-    margin-right: -250px; /* Negative value of #sidebar-left's width + left margin. */
+    margin-right: -230px; /* Negative value of #sidebar-left's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
   }
 

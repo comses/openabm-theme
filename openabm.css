@@ -559,7 +559,7 @@ Colors:
   #sidebar-left-inner .leftnav li a
   {
     margin: 0 0 1px 20px; 
-    width: 190px; 
+    width: 170px; 
     /* Use a 14px base font size with a 18px line height */
     font-size: 14px; /* 16px x .875 = 14px */
     line-height: 18px; /* 14px x 1.286 = 18px */
@@ -1018,7 +1018,7 @@ Colors:
     height: 20px;
     width: 80px;
     padding: 6px 0 0 5px;
-    margin: 0;
+    margin: -15px 10px 0 0;
     background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
     text-indent: 6px;
   }
@@ -1030,10 +1030,14 @@ Colors:
 
   tr.even /* Some tables have rows marked even or odd. */
   {
+    background-color: #CADCA7;
+    border-bottom: 0;
   }
 
   tr.odd
   {
+    background-color: #FFF;
+    border-bottom: 0;
   }
 
   li a.active /* The active item in a Drupal menu */
