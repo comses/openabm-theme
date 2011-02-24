@@ -239,7 +239,7 @@ ul.links li {
   height: 20px;
   width: 80px;
   padding: 6px 0 0 5px;
-  margin: -5px 10px 0 0;
+  margin: 0 10px 0 0;
   background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
   text-indent: 6px;
 }
