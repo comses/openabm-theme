@@ -1,0 +1,13 @@
+.setoff
+{
+  background: #E6F1D0; 
+  padding: 5px;
+  border: dashed 1px #CCC; 
+  margin: 5px 0; 
+}
+
+.setoff p 
+{
+  margin: 0 0px 10px 0;
+}
+

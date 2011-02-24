@@ -1,0 +1,98 @@
+/* $Id: views-styles.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+.block-views .title
+{
+  background: #CADCA7;
+  padding-left: 5px;
+}
+
+#block-views-calendar_event-block_1 ul, #block-views-calendar_event-block_2 ul
+{
+  margin: 0;
+  padding-left: 0;
+}
+
+#block-views-calendar_event-block_1 li, #block-views-calendar_event-block_2 li
+{
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+#block-views-announcements-block_1 .views-field-title a
+{
+  font-weight: bold;
+  display: block;
+  background: #E6E6E6; 
+  color: #505050;
+}
+
+#block-views-announcements-block_1 .views-row
+{
+  border: 1px dotted;
+  
+}
+
+.view-education-books .views-field-title a
+{
+  font-weight: bold;
+  display: block;
+  background: #E6E6E6; 
+  color: #505050;
+}
+
+.view-education-books .views-row
+{
+  border: 1px dotted;
+  
+}
+
+.featuredmodel
+{
+  margin-bottom: 20px;
+}
+
+.featuredmodel p
+{
+  margin-bottom: 0;
+}
+
+.featuredmodel img
+{
+  float: right; 
+  padding: 0 0 10px 10px;
+}
+
+.featuredmodel div
+{ 
+  border: solid 1px #718B4B; 
+  border-width: 0 1px; 
+  padding: 0 12px; 
+}
+
+.featuredmodel .featuredfooter 
+{ 
+  margin: 0; 
+  height: 14px; 
+  background: url('images/featureLower.gif') 
+  top left no-repeat; 
+}
+
+.featuredmodel h2 
+{ 
+  background: url('images/featureUpper.gif') 0 10px no-repeat; 
+  margin: 0; 
+  padding-left: 12px; 
+  height: 22px; 
+}
+
+.featuredmodel .seemore 
+{ 
+  font-size: 10px; 
+  text-align: right; 
+  line-height: 8px; 
+}

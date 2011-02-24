@@ -1,0 +1,66 @@
+/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+  padding: 0 40px 0 0; 
+  height: 60px;
+}
+
+#main-menu a
+{
+  display: inline-block; 
+  height: 26px; 
+  width:71px; 
+  margin-left: -9px;
+  background: url('../images/navBar.png') bottom no-repeat;
+  font-size: 14px;
+  color: #D2E2AE;
+  text-align: center;
+  text-transform: lowercase;
+  
+}
+
+#main-menu a:hover
+{
+  background: url('../images/navBar.png') top no-repeat;
+  color: #322E62;
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}

@@ -1,0 +1,73 @@
+/* $Id$ */
+
+/*
+ * modules/book/book.css
+ */
+
+.book-navigation li
+{
+  list-style: none;
+}
+.book-navigation .menu {
+  border-top: 1px solid #888;
+  margin-top: 10px;
+  padding: 1em 0 0 3em;
+}
+.book-navigation .page-links {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  text-align: center;
+  padding: 0.5em;
+}
+.book-navigation .page-previous {
+  text-align: left;
+  width: 35%;
+  display: block;
+  float: left; /* LTR */
+  padding: 4px 10px; 
+  border-left: solid 10px #CADCA7; 
+  background: #E6E6E6; 
+  color: #505050;
+}
+.book-navigation .page-up {
+  margin: 0 5%;
+  width: 4%;
+  display: block;
+  float: left; /* LTR */
+  padding: 0px 10px 4px 10px; 
+  border-top: solid 10px #CADCA7; 
+  background: #E6E6E6; 
+  color: #505050;
+}
+.book-navigation .page-next {
+  text-align: right;
+  width: 35%;
+  display: block;
+  float: right;
+  padding: 4px 10px; 
+  border-right: solid 10px #CADCA7; 
+  background: #E6E6E6; 
+  color: #505050;
+}
+#book-outline {
+  min-width: 56em;
+}
+.book-outline-form .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#edit-book-bid-wrapper .description {
+  clear: both;
+}
+#book-admin-edit select {
+  margin-right: 24px;
+}
+#book-admin-edit select.progress-disabled {
+  margin-right: 0;
+}
+#book-admin-edit tr.ahah-new-content {
+  background-color: #ffd;
+}
+#book-admin-edit .form-item {
+  float: left;
+}
