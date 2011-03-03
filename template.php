@@ -82,6 +82,19 @@ function openabm_preprocess_search_results(&$variables) {
 
 }
 
+function openabm_preprocess_views_view(&$vars) {
+  // Wrap exposed filters in a fieldset.
+  if ($vars['exposed']) {
+    $element = array(
+      '#title' => t('Filter Results'),
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+      '#value' => $vars['exposed'],
+    );
+    $vars['exposed'] = theme('fieldset', $element);
+  }
+}
+
 /**
  * Implementation of HOOK_theme().
  */
