@@ -61,18 +61,25 @@
   margin: 0;
 }
 
-#block-views-model-block_1 img
+#block-views-model-block_1 img, .featuredmodel img
 {
   float: right; 
   padding: 0 0 10px 10px;
   margin-top: -5px;
 }
 
-#block-views-model-block_1 div.content
+#block-views-model-block_1 div.content, .featuredmodel div.content
 { 
   border: solid 1px #718B4B; 
   border-width: 0 1px; 
   padding: 0 12px; 
+  margin-right: 19px;
+}
+
+.featuredmodel p
+{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .featuredmodel .featuredfooter 
@@ -83,7 +90,7 @@
   top left no-repeat; 
 }
 
-#block-views-model-block_1 h2 
+#block-views-model-block_1 h2, .featuredmodel h2.title
 { 
   font-size: 1.3em;
   background: url('../images/featureUpper.png') 0 10px no-repeat; 
@@ -92,7 +99,7 @@
   height: 22px; 
 }
 
-#block-views-model-block_1 .seemore 
+#block-views-model-block_1 .seemore, .featuredmodel .seemore
 { 
   font-size: 10px; 
   text-align: right; 

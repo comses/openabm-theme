@@ -5,4 +5,111 @@
  * Panels Styling
  */
 
+.pane-content p
+{
+  padding: 0 5px;
+}
 
+h2.pane-title
+{
+  background: #CADCA7;
+  padding-left: 5px;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+
+.pane-announcements h2
+{
+  margin-top: 1em;
+}
+
+.pane-announcements .views-field-title a
+{
+  font-weight: bold;
+  display: block;
+  background: #E6E6E6;
+  color: #505050;
+}
+
+.pane-announcements .pane-content p
+{
+  padding-bottom: 2em;
+}
+
+.pane-announcements .read-more
+{
+  margin-top: -30px;
+}
+
+.pane-announcements .views-row
+{
+  border: 1px dotted;
+}
+
+.pane-calendar-event .item-list li
+{
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+.pane-calendar-event .item-list ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+.pane-model
+{
+  margin-bottom: 20px;
+}
+
+.pane-model p
+{
+  margin: 0;
+}
+
+.pane-model img
+{
+  float: right; 
+  padding: 0 0 10px 10px;
+  margin-top: -5px;
+}
+
+.pane-model div.pane-content
+{ 
+  border: solid 1px #718B4B; 
+  border-width: 0 1px; 
+  padding: 0 12px; 
+  margin-right: 19px;
+}
+
+.pane-model p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pane-model .featuredfooter 
+{
+  margin: 0; 
+  height: 14px; 
+  background: url('../images/featureLower.png') 
+  top left no-repeat; 
+}
+
+.pane-model h2.pane-title
+{ 
+  font-size: 1.3em;
+  background: url('../images/featureUpper.png') 0 10px no-repeat; 
+  margin: 0; 
+  padding-left: 12px; 
+  height: 22px; 
+}
+
+.pane-model .seemore
+{ 
+  font-size: 10px; 
+  text-align: right; 
+  line-height: 8px; 
+  margin-top: 5px;
+}

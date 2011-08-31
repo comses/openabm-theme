@@ -184,18 +184,9 @@
 
         <?php print $content_top; ?>
 
-        <?php if ($is_front) : ?>
-          <div id="home-leftcol">
-            <?php print $homeleft; ?>				
-          </div>
-          <div id="home-rightcol">
-            <? print $homeright?>
-          </div>
-        <? else : ?>
           <div id="content-area">
             <?php print $content; ?>
           </div>
-        <? endif; ?>
 
         <?php print $content_bottom; ?>
 
