@@ -216,6 +216,10 @@ ul.links li {
   margin: 1em 0;
 }
 
+.feed-icons a img /* The links to the RSS or Atom feeds for the current list of content */ {
+  margin: 0 5px 0 0;
+}
+
 .more-link /* Aggregator, blog, and forum more link */ {
   text-align: left;
   float: right;
@@ -339,8 +343,8 @@ ul.links li {
 
 #footer-message ul
 {
-  float: left; 
-  margin: 0;
+  float: left;
+  margin: 0 0 0 500px;
 }
 
 #footer-message li
