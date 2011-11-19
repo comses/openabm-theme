@@ -114,3 +114,110 @@
 div.views-field-field-book-teaser-value {
   margin-bottom: 0.5em;
 }
+
+.view-profile label {
+  font-weight: bold;
+}
+
+.view-profile div {
+  margin-bottom: 1em;
+}
+
+.view-profile div.field-content {
+  margin-left: 1em;
+  margin-bottom: 0;
+}
+
+.view-profile .field-content a {
+  font-weight: bold;
+}
+
+.view-profile div.filefield-file {
+  display: inline;
+}
+
+.view-profile span.field-content a {
+  margin-left: 0;
+}
+
+.view-profile .views-field-field-fullname-value {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.view-profile div.views-field-field-profile-keywords-value div.field-item {
+  display: block;
+  float: left;
+}
+
+.view-profile ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-profile li.views-row {
+  display: inline;
+  margin: 5px 0;
+}
+
+.view-profile li span.views-field-field-profile-keywords-value span.field-content {
+  margin: 0;
+}
+
+.view-profile li span.views-field-field-profile-keywords-value a {
+  display: block;
+  float: left;
+  margin: 2px 4px 2px 0;
+  padding: 4px 3px;
+  text-transform: lowercase;
+  background: #E6E6E6;
+  color: #342F65;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+}
+
+.view-profile li span.views-field-field-profile-keywords-value a:link {
+  text-decoration: none;
+  font-size: 0.83em;
+}
+
+.view-profile li span.views-field-field-profile-keywords-value a:hover {
+  text-decoration: none;
+  background: #666;
+  color: #FFF;
+}
+
+.users-by-keyword .views-field-field-fullname-value a {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: #342F65;
+  font-weight: bold;
+}
+
+.users-by-keyword .views-row {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 1em;
+}
+
+.users-by-keyword .views-field-field-profile-research-value {
+  margin-bottom: 1em;
+}
+
+.users-by-keyword .views-field-field-profile-institutions-url {
+  margin-bottom: 0.5em;
+}
+
+.users-by-keyword label {
+  font-weight: bold;
+}
+
+.users-by-keyword div.field-content {
+  margin-left: 0.5em;
+}
+
+.view-tweets td.views-field-text {
+  padding: 1em 0.5em;
+}
+

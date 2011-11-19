@@ -112,3 +112,7 @@ h2.pane-title
   line-height: 8px; 
   margin-top: 5px;
 }
+
+.panel-region-separator {
+  clear: both;
+}

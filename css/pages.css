@@ -138,7 +138,7 @@ h3.title /* Comment title */ {
 }
 
 tr.even /* Some tables have rows marked even or odd. */ {
-  background-color: #CADCA7;
+  background-color: #EEE;
   border-bottom: 0;
 }
 
