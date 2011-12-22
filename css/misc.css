@@ -11,3 +11,7 @@
   margin: 0 0px 10px 0;
 }
 
+html.js fieldset.collapsible legend a { 
+  display: block;
+  font-weight: bold;
+}

@@ -191,13 +191,21 @@ ul.links /* List of links */ {
 }
 
 ul.links.inline {
-  margin: 0;
-  display: inline;
+  margin: 10px 0 0 0;
+  padding-top: 10px;
+  display: block;
+  border-top: 1px solid;
 }
 
 ul.links li {
   display: inline;
   list-style-type: none;
+  padding: 0 0.5em;
+}
+
+ ul.links.inline li.notifications_0, ul.links.inline li.notifications_1 {
+  float: right;
+  margin: 0;
   padding: 0 0.5em;
 }
 
@@ -218,6 +226,10 @@ ul.links li {
 
 .feed-icons a img /* The links to the RSS or Atom feeds for the current list of content */ {
   margin: 0 5px 0 0;
+}
+
+span.feed-icons a {
+  margin-right: 30px;
 }
 
 .more-link /* Aggregator, blog, and forum more link */ {
@@ -246,6 +258,7 @@ ul.links li {
   margin: 0 10px 0 0;
   background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
   text-indent: 6px;
+  font-weight: bold;
 }
 
 .setoff .read-more
@@ -381,7 +394,7 @@ html.js input.throbbing {
 #footer-message ul
 {
   float: left;
-  margin: 0 0 0 500px;
+  margin: 0;
 }
 
 #footer-message li
