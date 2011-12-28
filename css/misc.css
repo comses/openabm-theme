@@ -15,3 +15,26 @@ html.js fieldset.collapsible legend a {
   display: block;
   font-weight: bold;
 }
+
+.button
+{
+  display: inline-block;
+  font-size: 1.1em;
+  color: black !important;
+  margin: 0.4em 0 0.4em 0;
+  padding: 0 0.5em;
+  background-color: #CCC;
+  border: 1px solid #C4C4C4;
+  border-bottom-color: #707070;
+  border-radius: 4px;
+  border-image: initial;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button a {
+  color: black !important;
+}

@@ -100,6 +100,10 @@ function openabm_preprocess_views_view(&$vars) {
  */
 function openabm_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
+  $hooks['user_login_block'] = array(
+    'arguments' => array('form' => NULL),
+  );
+
   // Add your theme hooks like this:
   /*
   $hooks['hook_name_here'] = array( // Details go here );
@@ -111,28 +115,29 @@ function openabm_theme(&$existing, $type, $theme, $path) {
 // -- Navigation UL
 function openabm_menu_tree($tree)
 {
-	//-- rework the left nav view
-	return '<ul class="leftnav">'. $tree .'</ul>';
+  //-- rework the left nav view
+  return '<ul class="leftnav">'. $tree .'</ul>';
 }
 
 // -- Navigation LI
 function openabm_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) 
 {
-	$class = "";
+  $class = "";
 
-	if ($in_active_trail) 
-		$class = " class=\"activenav\"";
+  if ($in_active_trail) 
+    $class = " class=\"activenav\"";
 
-	return "<li".$class.">". $link . $menu ."</li>\n";
+  return "<li".$class.">". $link . $menu ."</li>\n";
 }
 
+/*
 //-- Change the login information 
 //-- (only changed the Capitol 'O' in out
 function openabm_lt_loggedinblock()
 {
-	global $user;
-	return check_plain($user->name) .' | ' . l(t('Log Out'), 'logout');
-}
+  global $user;
+  return check_plain($user->name) .' | ' . l(t('Log Out'), 'logout');
+} */
 
 /*
  * Remove the Track tab for all users.
@@ -143,6 +148,18 @@ function openabm_menu_local_task($link, $active = FALSE) {
   } else {
       return '<li '. ($active ? 'class="active" ' : '') .'>'. $link ."</li>\n";
   }
+}
+
+function openabm_user_login_block(&$form) {
+  $wgt = $form['links']['#weight'];
+
+  $items = array();
+  $items[] = l(t('Forgot how to login?'), 'user/password', array('attributes' => array('title' => t('Click to receive a new password via e-mail.'))));
+
+  $form['links'] = array('#value' => theme('item_list', $items));
+  $form['links']['#weight'] = 1;
+
+  return drupal_render($form);
 }
 
 /**
