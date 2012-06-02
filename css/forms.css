@@ -5,6 +5,18 @@
  * Form Styling
  */
 
+#advpoll-voting-binary-form-0 .form-item {
+  margin-bottom: 15px;
+}
+
+#advpoll-voting-binary-form-0 div.poll {
+  margin-left: 15px;
+}
+
+#advpoll-voting-binary-form-0 .form-item label input {
+  margin-left: -20px;
+  padding-left: 0;
+}
 
 .form-item,
 .form-checkboxes,

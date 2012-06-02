@@ -89,4 +89,9 @@
 }
 
 #block-user-3 /* "Who's online" block for a list of the online users */ {
+  margin-left: 10px;
+}
+
+#block-user-3 ul /* "Who's online" block for a list of the online users */ {
+  margin-left: 20px;
 }
