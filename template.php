@@ -61,7 +61,9 @@
  *   http://drupal.org/node/223440
  *   and http://drupal.org/node/190815#template-suggestions
  */
-function openabm_preprocess_search_results(&$variables) {
+
+/*
+ * function openabm_preprocess_search_results(&$variables) {
 
   // define the number of results being shown on a page
   $itemsPerPage = 10;
@@ -80,9 +82,11 @@ function openabm_preprocess_search_results(&$variables) {
   // set this html to the $variables
   $variables['openabm_search_totals'] = "Displaying $start - $end of $total results";
 
-}
+ }
+ */
 
-function openabm_preprocess_views_view(&$vars) {
+/*
+ * function openabm_preprocess_views_view(&$vars) {
   // Wrap exposed filters in a fieldset.
   if ($vars['exposed']) {
     $element = array(
@@ -93,16 +97,17 @@ function openabm_preprocess_views_view(&$vars) {
     );
     $vars['exposed'] = theme('fieldset', $element);
   }
-}
+ }
+ */
 
 /**
  * Implementation of HOOK_theme().
  */
 function openabm_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
-  $hooks['user_login_block'] = array(
-    'arguments' => array('form' => NULL),
-  );
+//  $hooks['user_login_block'] = array(
+//    'arguments' => array('form' => NULL),
+//  );
 
   // Add your theme hooks like this:
   /*
@@ -150,7 +155,7 @@ function openabm_menu_local_task($link, $active = FALSE) {
   }
 }
 
-function openabm_user_login_block(&$form) {
+function openabm_preprocess_user_login_block(&$form) {
   $wgt = $form['links']['#weight'];
 
   $items = array();
