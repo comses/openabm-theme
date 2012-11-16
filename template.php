@@ -105,9 +105,11 @@
  */
 function openabm_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
-//  $hooks['user_login_block'] = array(
-//    'arguments' => array('form' => NULL),
-//  );
+  
+  $hooks['user_login_block'] = array(
+    'arguments' => array('form' => NULL),
+    'template' => 'user-login-block',
+  );
 
   // Add your theme hooks like this:
   /*
@@ -155,7 +157,7 @@ function openabm_menu_local_task($link, $active = FALSE) {
   }
 }
 
-function openabm_preprocess_user_login_block(&$form) {
+/*function openabm_user_login_block(&$form) {
   $wgt = $form['links']['#weight'];
 
   $items = array();
@@ -165,7 +167,7 @@ function openabm_preprocess_user_login_block(&$form) {
   $form['links']['#weight'] = 1;
 
   return drupal_render($form);
-}
+}*/
 
 /**
  * Override or insert variables into all templates.
@@ -243,3 +245,16 @@ function openabm_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+/**
+ * Override or insert variables into the user login block template.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ */
+function openabm_preprocess_user_login_block(&$vars) {
+  // Modify the text of the submit button
+  //$vars['form']['submit']['#value'] = t('Login Now!');
+ 
+  $vars['form_markup'] = drupal_render($vars['form']);
+}

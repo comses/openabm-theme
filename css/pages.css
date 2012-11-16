@@ -391,6 +391,10 @@ html.js input.throbbing {
   margin-right: 10px;
 }
 
+#footer-message a {
+  margin-left: 5px;
+}
+
 #footer-message ul
 {
   float: left;

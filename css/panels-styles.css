@@ -23,7 +23,7 @@ h2.pane-title
   margin-top: 1em;
 }
 
-.pane-announcements .views-field-title a
+.pane-announcements .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a
 {
   font-weight: bold;
   display: block;

@@ -61,6 +61,11 @@
   margin: 0;
 }
 
+#block-views-model-block_1 p a
+{
+  line-height: 1.4em;
+}
+
 #block-views-model-block_1 img, .featuredmodel img
 {
   float: right; 
@@ -104,7 +109,6 @@
   font-size: 10px; 
   text-align: right; 
   line-height: 8px; 
-  margin-top: 5px;
 }
 
 .view-education .views-field-title a {
