@@ -71,3 +71,14 @@
 #book-admin-edit .form-item {
   float: left;
 }
+
+.book-content-formula {
+  margin: 1em 40px 1em 0;
+  text-align: right;
+}
+
+pre.book-code {
+  padding: 1em 1em 1em 2em;
+  background: #EEE;
+  border: 1px dotted #AAA;
+}
