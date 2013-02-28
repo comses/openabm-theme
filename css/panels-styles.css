@@ -18,12 +18,12 @@ h2.pane-title
   margin-bottom: 0;
 }
 
-.pane-announcements h2, .pane-abm-news h2
+.pane-announcements-panel-pane-1 h2, .pane-abm-news h2
 {
   margin-top: 1em;
 }
 
-.pane-announcements .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a 
+.pane-announcements-panel-pane-1 .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a 
 {
   font-weight: bold;
   display: block;
@@ -31,18 +31,18 @@ h2.pane-title
   color: #505050;
 }
 
-.pane-announcements .pane-content p, .pane-abm-news-panel-pane-1 .pane-content p
+.pane-announcements-panel-pane-1 .pane-content p, .pane-abm-news-panel-pane-1 .pane-content p
 {
   padding-bottom: 2em;
 }
 
-.pane-announcements .read-more, .pane-abm-news-panel-pane-1 .read-more
+.pane-announcements-panel-pane-1 .read-more, .pane-abm-news-panel-pane-1 .read-more
 {
   margin-top: -30px;
   font-weight: bold;
 }
 
-.pane-announcements .views-row, .pane-abm-news-panel-pane-1 .views-row
+.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row
 {
 }
 

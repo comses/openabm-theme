@@ -18,6 +18,11 @@
   padding-left: 0;
 }
 
+.form-textarea, .mceContentBody {
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
 .form-item,
 .form-checkboxes,
 .form-radios /* Wrapper for a form element (or group of form elements) and its label */ {
