@@ -1,0 +1,11 @@
+div.biblio-entry a {
+  font-weight: bold;
+}
+
+div.biblio-entry ul.biblio-export-buttons {
+  display: none;
+}
+
+span.biblio-authors a {
+  font-weight: normal;
+}

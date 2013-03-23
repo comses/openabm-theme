@@ -1,5 +1,3 @@
-/* $Id: pages-rtl.css,v 1.6 2009/11/05 11:07:02 johnalbin Exp $ */
-
 /**
  * @file
  * RTL companion for the pages.css file.
@@ -16,6 +14,7 @@
 /*
  * Content
  */
-.more-link /* Aggregator, blog, and forum more link */ {
-  text-align: left;
+ul.links li /* List of links */ {
+  display: inline-block; /* Bug in Safari causes display: inline to fail. */
+  padding: 0 0 0 1em;
 }

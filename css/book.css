@@ -8,11 +8,6 @@
 {
   list-style: none;
 }
-
-.book-navigation ul.leftnav a {
-  font-weight: bold;
-}
-
 .book-navigation .menu {
   border-top: 1px solid #888;
   margin-top: 10px;
@@ -86,8 +81,4 @@ pre.book-code {
   padding: 1em 1em 1em 2em;
   background: #EEE;
   border: 1px dotted #AAA;
-}
-
-#node-3443 div#book-navigation-3443 {
-    display: none;
 }

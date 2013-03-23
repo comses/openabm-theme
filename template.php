@@ -1,18 +1,15 @@
 <?php
-// $Id: template.php,v 1.21 2009/08/12 04:25:15 johnalbin Exp $
-
 /**
- * @file
+ * @file template.php
  * Contains theme override functions and preprocess functions for the theme.
  *
  * ABOUT THE TEMPLATE.PHP FILE
  *
  *   The template.php file is one of the most useful files when creating or
- *   modifying Drupal themes. You can add new regions for block content, modify
- *   or override Drupal's theme functions, intercept or make additional
- *   variables available to your theme, and create custom PHP logic. For more
- *   information, please visit the Theme Developer's Guide on Drupal.org:
- *   http://drupal.org/theme-guide
+ *   modifying Drupal themes. You can modify or override Drupal's theme
+ *   functions, intercept or make additional variables available to your theme,
+ *   and create custom PHP logic. For more information, please visit the Theme
+ *   Developer's Guide on Drupal.org: http://drupal.org/theme-guide
  *
  * OVERRIDING THEME FUNCTIONS
  *
@@ -30,10 +27,9 @@
  *   where openabm is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_breadcrumb() function.
  *
- *   If you would like to override any of the theme functions used in Zen core,
- *   you should first look at how Zen core implements those functions:
+ *   If you would like to override either of the two theme functions used in Zen
+ *   core, you should first look at how Zen core implements those functions:
  *     theme_breadcrumbs()      in zen/template.php
- *     theme_menu_item_link()   in zen/template.php
  *     theme_menu_local_tasks() in zen/template.php
  *
  *   For more information, please visit the Theme Developer's Guide on
@@ -62,154 +58,66 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
-function openabm_preprocess_search_results(&$variables) {
-  // define the number of results being shown on a page
-  $itemsPerPage = 10;
-
-  // get the current page
-  $currentPage = $_REQUEST['page']+1;
-
-  // get the total number of results from the $GLOBALS
-  $total = $GLOBALS['pager_total_items'][0];
-
-  // perform calculation
-  $start = 10*$currentPage-9;
-  $end = $itemsPerPage * $currentPage;
-  if ($end>$total) $end = $total;
-
-  // set this html to the $variables
-  $variables['openabm_search_totals'] = "Displaying $start - $end of $total results";
- }
-
-/*
- * function openabm_preprocess_views_view(&$vars) {
-  // Wrap exposed filters in a fieldset.
-  if ($vars['exposed']) {
-    $element = array(
-      '#title' => t('Filter Results'),
-      '#collapsible' => TRUE,
-      '#collapsed' => TRUE,
-      '#value' => $vars['exposed'],
-    );
-    $vars['exposed'] = theme('fieldset', $element);
-  }
- }
- */
-
-/**
- * Implementation of HOOK_theme().
- */
-function openabm_theme(&$existing, $type, $theme, $path) {
-  $hooks = zen_theme($existing, $type, $theme, $path);
-  
-  $hooks['user_login_block'] = array(
-    'arguments' => array('form' => NULL),
-    'template' => 'user-login-block',
-  );
-
-  // Add your theme hooks like this:
-  /*
-  $hooks['hook_name_here'] = array( // Details go here );
-  */
-  // @TODO: Needs detailed comments. Patches welcome!
-  return $hooks;
-}
-
-// -- Navigation UL
-function openabm_menu_tree($tree)
-{
-  //-- rework the left nav view
-  return '<ul class="leftnav">'. $tree .'</ul>';
-}
-
-// -- Navigation LI
-function openabm_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) 
-{
-  $class = "";
-
-  if ($in_active_trail) 
-    $class = " class=\"activenav\"";
-
-  return "<li".$class.">". $link . $menu ."</li>\n";
-}
-
-/*
-//-- Change the login information 
-//-- (only changed the Capitol 'O' in out
-function openabm_lt_loggedinblock()
-{
-  global $user;
-  return check_plain($user->name) .' | ' . l(t('Log Out'), 'logout');
-} */
-
 /*
  * Remove the Track tab for all users.
  */
-function openabm_menu_local_task($link, $active = FALSE) {
-  if (strpos($link,'track')) {
-    return '';
-  } else {
-      return '<li '. ($active ? 'class="active" ' : '') .'>'. $link ."</li>\n";
-  }
-}
-
-/*function openabm_user_login_block(&$form) {
-  $wgt = $form['links']['#weight'];
-
-  $items = array();
-  $items[] = l(t('Forgot how to login?'), 'user/password', array('attributes' => array('title' => t('Click to receive a new password via e-mail.'))));
-
-  $form['links'] = array('#value' => theme('item_list', $items));
-  $form['links']['#weight'] = 1;
-
-  return drupal_render($form);
-}*/
+#function openabm_menu_local_task($link, $active = FALSE) {
+#  if (strpos($link,'track')) {
+#    return '';
+#  } else {
+#      return '<li '. ($active ? 'class="active" ' : '') .'>'. $link ."</li>\n";
+#  }
+#}
 
 /**
- * Override or insert variables into all templates.
+ * Override or insert variables into the html templates.
  *
- * @param $vars
+ * @param $variables
  *   An array of variables to pass to the theme template.
  * @param $hook
- *   The name of the template being rendered (name of the .tpl.php file.)
+ *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function openabm_preprocess(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function openabm_preprocess_html(&$variables, $hook) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
+
+  // The body tag's classes are controlled by the $classes_array variable. To
+  // remove a class from $classes_array, use array_diff().
+  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
 }
 // */
 
 /**
  * Override or insert variables into the page templates.
  *
- * @param $vars
+ * @param $variables
  *   An array of variables to pass to the theme template.
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function openabm_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function openabm_preprocess_page(&$variables, $hook) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
 /**
  * Override or insert variables into the node templates.
  *
- * @param $vars
+ * @param $variables
  *   An array of variables to pass to the theme template.
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function openabm_preprocess_node(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function openabm_preprocess_node(&$variables, $hook) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
   // openabm_preprocess_node_page() or openabm_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $vars['node']->type;
+  $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
-    $function($vars, $hook);
+    $function($variables, $hook);
   }
 }
 // */
@@ -217,74 +125,29 @@ function openabm_preprocess_node(&$vars, $hook) {
 /**
  * Override or insert variables into the comment templates.
  *
- * @param $vars
+ * @param $variables
  *   An array of variables to pass to the theme template.
  * @param $hook
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function openabm_preprocess_comment(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function openabm_preprocess_comment(&$variables, $hook) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
 /**
  * Override or insert variables into the block templates.
  *
- * @param $vars
+ * @param $variables
  *   An array of variables to pass to the theme template.
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function openabm_preprocess_block(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+function openabm_preprocess_block(&$variables, $hook) {
+  // Add a count to all the blocks in the region.
+  $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
 // */
 
-/**
- * Override or insert variables into the user login block template.
- *
- * @param $vars
- *   An array of variables to pass to the theme template.
- */
-#function openabm_preprocess_user_login_block(&$vars) {
-  // Modify the text of the submit button
-  //$vars['form']['submit']['#value'] = t('Login Now!');
- 
-#  $vars['form_markup'] = drupal_render($vars['form']);
-#}
-
-function openabm_comment_post_forbidden($node) {
-  global $user;
-  static $authenticated_post_comments;
-
-  if (!$user->uid) {
-    if (!isset($authenticated_post_comments)) {
-      // We only output any link if we are certain, that users get permission
-      // to post comments by logging in. We also locally cache this information.
-      $authenticated_post_comments = array_key_exists(DRUPAL_AUTHENTICATED_RID, user_roles(TRUE, 'post comments') + user_roles(TRUE, 'post c
-omments without approval'));
-    }
-
-    if ($authenticated_post_comments) {
-      // We cannot use drupal_get_destination() because these links
-      // sometimes appear on /node and taxonomy listing pages.
-      if (variable_get('comment_form_location_'. $node->type, COMMENT_FORM_SEPARATE_PAGE) == COMMENT_FORM_SEPARATE_PAGE) {
-        $destination = 'destination='. rawurlencode("comment/reply/$node->nid#comment-form");
-      }
-      else {
-        $destination = 'destination='. rawurlencode("node/$node->nid#comment-form");
-      }
-
-#      if (variable_get('user_register', 1)) {
-#        // Users can register themselves.
-#        return t('<a href="@login">Login</a> or <a href="@register">register</a> to post comments', array('@login' => url('user/login', array('query' => $destination)), '@register' => url('user/register', array('query' => $destination))));
-#      }
-#      else {
-#        // Only admins can add new users, no public registration.
-#        return t('<a href="@login">Login</a> to post comments', array('@login' => url('user/login', array('query' => $destination))));
-#      }
-    }
-  }
-}

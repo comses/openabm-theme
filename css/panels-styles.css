@@ -1,4 +1,3 @@
-/* $Id: panels-styles.css,v 1.1.2.1 2009/12/12 15:31:54 johnalbin Exp $ */
 
 /**
  * @file
@@ -18,12 +17,12 @@ h2.pane-title
   margin-bottom: 0;
 }
 
-.pane-announcements-panel-pane-1 h2, .pane-abm-news h2
+.pane-comses-net h2.pane-title
 {
-  margin-top: 1em;
+  margin-top: 5px;
 }
 
-.pane-announcements-panel-pane-1 .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a, .pane-education .views-field-title a 
+.pane-announcements-panel-pane-1 .views-field-title a, .pane-education .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a 
 {
   font-weight: bold;
   display: block;
@@ -31,32 +30,68 @@ h2.pane-title
   color: #505050;
 }
 
-.pane-announcements-panel-pane-1 .pane-content p, .pane-abm-news-panel-pane-1 .pane-content p, .pane-education .pane-content p
+.pane-announcements-panel-pane-1 .views-field-title a:hover, .pane-education .views-field-title a:hover, .pane-site-updates-panel-pane-1 .views-field-title a:hover, .pane-abm-news-panel-pane-1 .views-field-title a:hover
+{
+  text-decoration: underline;
+}
+
+.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row, .pane-site-updates-panel-pane-1 .views-row
 {
   padding-bottom: 2em;
 }
 
-.pane-announcements-panel-pane-1 .read-more, .pane-abm-news-panel-pane-1 .read-more
+.pane-announcements-panel-pane-1 .read-more, .pane-abm-news-panel-pane-1 .read-more, .pane-site-updates-panel-pane-1 .read-more
 {
-  margin-top: -30px;
+  float: right;
+  height: 20px;
+  width: 80px;
+  padding: 6px 0 0 5px;
+  margin: 0 10px 0 0;
+  background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
+  font-weight: bold;
+  font-size: .9em;
+  text-indent: 2px;
+}
+
+.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row
+{
+}
+
+.pane-events-calendar .view-content
+{
+  padding-bottom: 1em;
+}
+
+.pane-events-calendar .more-link
+{
+  text-align: left;
+  float: right;
+  height: 20px;
+  width: 80px;
+  padding: 6px 0 0 5px;
+  margin: -20px 10px 0 0;
+  background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
+  text-indent: 2px;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
-.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row, .pane-education .views-row
-{
-}
 
-
-.pane-calendar-event .item-list li
+.pane-events-calendar .item-list li
 {
   list-style: none;
   margin-bottom: 0.5em;
 }
 
-.pane-calendar-event .item-list ul
+.pane-events-calendar .item-list ul
 {
   margin: 0;
   padding: 0;
+}
+
+.pane-events-calendar .item-list ul a
+{
+  font-weight: normal;
 }
 
 .pane-model

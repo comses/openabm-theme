@@ -1,5 +1,3 @@
-/* $Id: nodes.css,v 1.6 2009/11/02 15:37:29 johnalbin Exp $ */
-
 /**
  * @file
  * Node Styling
@@ -9,6 +7,13 @@
 
 
 .node /* Node wrapper */ {
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+.node-promoted /* A node that has been promoted to the front page */ {
 }
 
 .node-sticky /* A sticky node (displayed before others in a list) */ {
@@ -38,46 +43,39 @@
 .node-teaser /* A node displayed as teaser */ {
 }
 
-/* All nodes are given a node-type-FOO class that describes the type of
- * content that it is. If you create a new content type called
- * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+.node-readmore {
+  float: right;
+  height: 20px;
+  width: 80px;
+  padding: 6px 0 0 5px;
+  margin: 0 10px 0 0;
+  background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
+  font-weight: bold;
+  font-size: .9em;
+  text-indent: 2px;
+}
+
+/* All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
  */
-.node-type-page /* Page content node */ {
+.node-page /* Page content node */ {
 }
 
-.node-type-story /* Story content node */ {
+.node-article /* Article content node */ {
 }
 
-.node h2.title /* Node title */ {
+h2.node-title /* Node title */ {
 }
 
-.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
-  color: #c00;
-}
-
-.node .picture /* The picture of the node author */ {
-}
-
-.node.node-unpublished .picture,
-.comment.comment-unpublished .picture {
-  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
-}
-
-.node .meta /* Wrapper for submitted and terms data */ {
+.node .user-picture /* The picture of the node author */ {
 }
 
 .node .submitted /* The "posted by" information */ {
-}
-
-.node .terms /* Node terms (taxonomy) */ {
 }
 
 .node .content /* Node's content wrapper */ {
 }
 
 .node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
-}
-
-.preview .node /* Preview of the content before submitting new or updated content */ {
-  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
 }

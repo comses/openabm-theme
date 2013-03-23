@@ -1,5 +1,3 @@
-/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
-
 /**
  * @file
  * Navigation Styling
@@ -17,17 +15,31 @@ li a.active {
  * Navigation bar
  */
 #navigation {
+  /* overflow: hidden; /* Sometimes you want to prevent overlapping with main div. */
+}
+
+#navigation ul.links, /* Main menu and secondary menu links */
+#navigation .content ul /* Menu block links */ {
+  /*margin: 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation ul.links li, /* A simple method to get navigation links to appear in one line. */
+#navigation .content li {
+  /*float: left; /* LTR */
+  /*padding: 0 10px 0 0; /* LTR */
 }
 
 .region-navigation {
 }
 
 /*
- * Primary and Secondary menu links
+ * Main menu and Secondary menu links
  */
 #main-menu {
   padding: 0 40px 0 0; 
-  height: 60px;
+  /*height: 60px; */
 }
 
 #main-menu a
@@ -51,6 +63,7 @@ li a.active {
 }
 
 #secondary-menu {
+  float: right;
 }
 
 /*
@@ -60,7 +73,10 @@ li a.active {
 }
 
 /*
- * "Menu block" blocks. See http://drupal.org/project/menu_block
+ * "Menu block" blocks
+ *
+ * Drupal core has limited ways in which it can display its menus. To get around
+ * these limitations, see http://drupal.org/project/menu_block
  */
-.block-menu_block {
+.block-menu-block {
 }
