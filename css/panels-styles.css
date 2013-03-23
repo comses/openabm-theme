@@ -23,7 +23,7 @@ h2.pane-title
   margin-top: 1em;
 }
 
-.pane-announcements-panel-pane-1 .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a 
+.pane-announcements-panel-pane-1 .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a, .pane-education .views-field-title a 
 {
   font-weight: bold;
   display: block;
@@ -31,7 +31,7 @@ h2.pane-title
   color: #505050;
 }
 
-.pane-announcements-panel-pane-1 .pane-content p, .pane-abm-news-panel-pane-1 .pane-content p
+.pane-announcements-panel-pane-1 .pane-content p, .pane-abm-news-panel-pane-1 .pane-content p, .pane-education .pane-content p
 {
   padding-bottom: 2em;
 }
@@ -42,9 +42,10 @@ h2.pane-title
   font-weight: bold;
 }
 
-.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row
+.pane-announcements-panel-pane-1 .views-row, .pane-abm-news-panel-pane-1 .views-row, .pane-education .views-row
 {
 }
+
 
 .pane-calendar-event .item-list li
 {
