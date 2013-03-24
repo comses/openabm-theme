@@ -82,3 +82,7 @@ pre.book-code {
   background: #EEE;
   border: 1px dotted #AAA;
 }
+
+#node-3443 div#book-navigation-3443 {
+    display: none;
+}

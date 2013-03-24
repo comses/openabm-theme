@@ -38,7 +38,7 @@ description = Open Agent Based Modeling Consortium's theme.
 
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
-
+;version     = "7.x-3.0"
 core        = 7.x
 base theme  = zen
 
@@ -69,7 +69,7 @@ stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
 
 stylesheets[all][]   = css/misc.css
-stylesheets[all][]   = css/openabm-biblio.css
+;stylesheets[all][]   = css/openabm-biblio.css
 stylesheets[all][]   = css/advanced-forum.images.css
 stylesheets[all][]   = css/advanced-forum.style.css
 ;stylesheets[all][]   = css/book.css

@@ -39,3 +39,11 @@ html.js fieldset.collapsible legend a {
 .button a {
   color: black !important;
 }
+
+/* Shadowbox override */
+#sb-body, #sb-loading {
+  background-color: #CCC;
+}
+
+#sb-body-inner {
+}

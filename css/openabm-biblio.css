@@ -2,10 +2,28 @@ div.biblio-entry a {
   font-weight: bold;
 }
 
+div.biblio-entry a:hover {
+  text-decoration: underline;
+}
+
 div.biblio-entry ul.biblio-export-buttons {
   display: none;
 }
 
 span.biblio-authors a {
   font-weight: normal;
+}
+
+span.biblio-authors a:hover {
+  text-decoration: underline;
+}
+
+#biblio-node td.biblio-row-title {
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+#biblio-node td {
+  padding: 0.5em 1em;
+  vertical-align: center;
 }

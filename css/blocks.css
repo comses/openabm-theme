@@ -117,6 +117,11 @@ h2.block-title /* Block title */ {
   color: #F6FF97;
 }
 
+#block-system-navigation li.expanded ul.menu
+{
+  display: none;
+}
+
 #block-system-user-menu /* "User menu" block for Drupal user menu */ {
 }
 
