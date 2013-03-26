@@ -38,7 +38,7 @@ description = Open Agent Based Modeling Consortium's theme.
 
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
-;version     = "7.x-3.0"
+version     = "7.x-3.0"
 core        = 7.x
 base theme  = zen
 
@@ -69,15 +69,14 @@ stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
 
 stylesheets[all][]   = css/misc.css
-;stylesheets[all][]   = css/openabm-biblio.css
+stylesheets[all][]   = css/openabm-biblio.css
 stylesheets[all][]   = css/advanced-forum.images.css
 stylesheets[all][]   = css/advanced-forum.style.css
-;stylesheets[all][]   = css/book.css
-;stylesheets[all][]   = css/search.css
+stylesheets[all][]   = css/book.css
+stylesheets[all][]   = css/search.css
 stylesheets[all][]   = css/navigation.css
 stylesheets[all][]   = css/panels-styles.css
 ;stylesheets[all][]   = css/messages.css
-stylesheets[all][]   = css/slider.css
 stylesheets[all][]   = css/vertical-tabs.css
 
 ;stylesheets[all][]   = basic/css/basic.css
@@ -100,9 +99,6 @@ stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/slider.js
-scripts[] = js/jquery-1.3.2.min.js
-;scripts[] = js/script.js
 scripts[] = js/openabm.js
 scripts[] = js/niftycube.js
 scripts[] = basic/js/basic.js

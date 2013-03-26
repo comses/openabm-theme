@@ -13,21 +13,30 @@
   margin-bottom: 0;
 }
 
-.search-results p {
+ol.search-results {
+  padding-left: 0;
+}
+
+li.search-result {
+  list-style: none;
+}
+
+.search-result p {
   margin-top: 0;
 }
 
-.search-results dt {
+.search-result .title {
   font-size: 1.2em;
+  margin: 0 0 0.83em;
 }
 
-.search-results dt a {
+.search-result .title a {
   color: #342F65;
   text-decoration: underline;
 }
 
-.search-results dd {
-  margin-bottom: 1em;
+.search-results .search-snippet-info {
+  margin: 0 0 1em 1.66em;
 }
 
 .search-results .search-info {

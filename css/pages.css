@@ -187,13 +187,17 @@ ul.links.inline {
   border-top: 1px solid;
 }
 
+div.panel-pane ul.links.inline {
+  border-top: none;
+}
+
 ul.links li {
   display: inline;
   list-style-type: none;
   padding: 0 0.5em;
 }
 
-div.panel-pane ul.links li.comment-comments, div.panel-pane ul.links li.comment-add, ul.links li.statistics_counter {
+div.panel-pane ul.links li.comment-comments, div.panel-pane ul.links li.comment-add, div.panel-pane ul.links li.comment_forbidden, ul.links li.statistics_counter {
   display: none;
 }
 
