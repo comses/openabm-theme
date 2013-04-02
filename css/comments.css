@@ -15,6 +15,24 @@
 }
 
 .comment /* Wrapper for a single comment */ {
+  border-style:solid;
+  border-width:1px;
+  border-color:#ccc #ddd #eee;
+
+  background:#fff url(../images/vrule.png) 65% 0% repeat-y;
+  margin:0px 0px 10px;
+
+  -moz-box-shadow:#fff 0px 1px 0px;
+  -webkit-box-shadow:#fff 0px 1px 0px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.comment .column-main .column-wrapper { padding:19px; }
+
+.comment .column-side .column-wrapper {
+  padding:9px;
+  font-size:11px;
 }
 
 .comment-preview /* Preview of the comment before submitting new or updated comment */ {
@@ -52,7 +70,15 @@
 .comment-by-viewer /* A comment created by the current user */ {
 }
 
-h3.comment-title /* Comment title */ {
+.comment-title /* Comment title */ {
+ margin: 0 0 0.5em 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.comment-title div.field-name-field-rating {
+  float: left;
+  margin-right: 10px;
 }
 
 .new /* "New" marker for comments that are new for the current user */ {
@@ -62,18 +88,80 @@ h3.comment-title /* Comment title */ {
 .comment .user-picture /* The picture of the comment author */ {
 }
 
-.comment .submitted /* The "posted by" information */ {
+.comment-submitted /* The "posted by" information */ {
+  padding:10px;
+  background:#f8f8f8;
 }
 
-.comment .content /* Comment's content wrapper */ {
+.comment-content /* Comment's content wrapper */ {
+}
+
+.comment-content .field-name-comment-body {
+  margin: 0 0 1em 0;
 }
 
 .comment .user-signature /* The user's signature */ {
 }
 
-.comment ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
+.comment-links ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
+  padding:10px 0;
 }
+
+.comment-links ul.links.inline, .comment-links ul.links /* Comment links. See also the ul.links declaration in the pages.css. */ {
+  border-top: none;
+}
+
+.comment-links ul.links li.comment-reply, .comment-links ul.links.inline li.comment_forbidden /* Comment links. See also the ul.links declaration in the pages.css. */ {
+  display: none;
+}
+
+.column-main {
+  float: left;
+  width: 65%;
+}
+
+.column-side {
+  float: right;
+  width: 34.99%;
+}
+
+.column-side ul.links li {
+  display: block;
+  float:none;
+}
+
+.column-side ul.links a,
+.column-side ul.links span {
+  padding: 0px 10px;
+  display: inline;
+  float: none;
+}
+
+.column-side ul.links span a {
+  padding:0px;
+  display:inline;
+}
+
+.column-side ul.links a.active,
+.column-side ul.links a:hover { background:#fff; }
+.comment-links ul.links a:hover { background:#f4f4f4; }
 
 .indented /* Nested comments are indented */ {
   /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+.js #comments h2.title.comment-form {
+  padding-left: 20px;
+  background: url('../images/open-close-sprite.gif') 0 2px no-repeat;
+}
+.js #comments h2.title.comment-form.open {
+  background-position: 0 -43px;
+}
+.js #comments h2.title.comment-form.transition {  /* This rule must come after .open */
+  background-position: 0 -23px;
+}
+.js #comments h2.title.comment-form:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand; /* For IE */
 }
