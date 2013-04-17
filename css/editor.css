@@ -1,0 +1,42 @@
+/**
+* BUEditor styling for Comment/Node body forms
+*/
+
+#node-form .editor-container .separator,
+#comment-form .editor-container .separator {
+  padding: 0 4px 0 5px;
+}
+
+.bue-ui {
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+.bue-button {/* buttons */
+  border-color: #f5f5f5; /* or transparent*/
+  background-color: #f5f5f5;
+}
+.bue-button:hover, .bue-button.stay-clicked {
+  border-color: #06c;
+  background-color: #ccf;
+}
+
+.resizable-textarea textarea {
+  border: 1px solid #D9D9D9;
+  font: 1.1em/1.4em "Lucida Console", "Courier New", Courier, monospace;
+  padding: 8px 12px;
+}
+
+.resizable-textarea .preview {
+  padding: 8px 12px;
+}
+
+/* IMCE Image floating */
+.img_left {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+.img_right {
+  float: right;
+  padding: 0 0 10px 10px;
+}

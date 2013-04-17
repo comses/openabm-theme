@@ -205,15 +205,96 @@ ul#main-menu.links.inline {
   border-top: none;
 }
 
-.item-list .pager /* A list of page numbers when more than 1 page of content is available */ {
-  clear: both;
-  margin: 1em 0;
-  text-align: center;
+/**
+ * Node Type List
+ */
+div.node-type-title a {
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
-.item-list .pager li /* Each page number in the pager list */ {
-/*  padding: 0 0.5em; */
+div.node-type-description {
+  border-bottom: 1px #323232;
+  margin-bottom: 3em;
 }
+
+/**
+ * Pagers =============================================================
+ */
+.pager {
+  font-weight:normal;
+  font-size:11px;
+  }
+
+.pager ul.pager-list {
+  float:left;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+
+.pager ul.pager-links { 
+  float:right;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+
+/**
+ * Tabs, pagers =======================================================
+ */
+div.pager {
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+
+  background:#fff;
+  line-height:18px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#ccc #ddd #eee;
+  margin:10px auto;
+  padding: 3px 0;
+}
+
+.pager a,
+.pager li.pager-current {
+  color:#888;
+  font-weight:normal;
+  font-size:13px;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+  margin: 0;
+  padding:5px 10px;
+  border:0px;
+  background:transparent;
+}
+
+.pager li.pager-current {
+  background:#92B566;
+  color:#fff;
+}
+
+#page .pager a:hover {
+  background: #eee;
+  color:#333;
+  text-decoration: none;
+}
+
+ul.links li {
+  padding: 0;
+}
+
+#page .pager ul.pager-list li:first-child a,
+#page .pager ul.pager-list li.pager-current:first-child {
+  -moz-border-radius:5px 0px 0px 5px;
+  -webkit-border-radius:5px 0px 0px 5px;
+}
+
+#page .pager ul.pager-links li:last-child a {
+  -moz-border-radius:0px 5px 5px 0px;
+  -webkit-border-radius:0px 5px 5px 0px;
+}
+
 
 .feed-icon /* The link to the RSS or Atom feed for the current list of content */ {
   margin: 1em 0;
@@ -244,6 +325,11 @@ span.feed-icons a {
   font-weight: bold;
 }
 
+.more-link a:hover
+{
+  text-decoration: none;
+}
+
 .read-more
 {
   float: right;
@@ -254,6 +340,11 @@ span.feed-icons a {
   background: url(/sites/all/themes/openabm/images/read_more.png) no-repeat left;
   text-indent: 6px;
   font-weight: bold;
+}
+
+.read-more a
+{
+  text-decoration: none;
 }
 
 .setoff .read-more

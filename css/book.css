@@ -86,3 +86,7 @@ pre.book-code {
 #node-3443 div#book-navigation-3443 {
     display: none;
 }
+
+ul.links.inline li.book_add_child, ul.links.inline li.book_printer {
+  display: none;
+}

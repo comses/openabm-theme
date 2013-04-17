@@ -53,11 +53,11 @@ li a.active {
   color: #D2E2AE;
   text-align: center;
   text-transform: lowercase;
-  
 }
 
 #main-menu a:hover
 {
+  text-decoration: none;
   background: url('../images/navBar.png') top no-repeat;
   color: #322E62;
 }

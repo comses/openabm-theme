@@ -1,0 +1,39 @@
+
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: #92B566;
+  color: #ffffff;
+}
+
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: #92B566;
+}
+
+
+ul.action-links {
+  list-style-type: none;
+}
+
+ul.action-links li {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  font-size: 12px;
+}
+
+
+ul.action-links li a {
+  background: #92B566 url(../images/buttons.png) -800px 50% no-repeat;
+  color: #fff;
+  text-shadow: 0 1px 0 #505050;
+  text-decoration: none;
+  margin: 0px 5px 0px 0px;
+  padding: 4px 8px 4px 25px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

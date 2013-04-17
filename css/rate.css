@@ -1,0 +1,24 @@
+.rate-info, .rate-description {
+  clear: left;
+  font-size: 0.8em;
+  color: #666;
+}
+
+div.rate-widget div.item-list {
+}
+
+div.rate-widget div.item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.rate-widget div.item-list li{
+  margin-right: 1em;
+}
+
+div.rate-widget div.rate-info {
+}
+
+div.rate-widget div.rate-description {
+  margin-bottom: 0.5em;
+}

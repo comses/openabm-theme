@@ -115,6 +115,7 @@ h2.block-title /* Block title */ {
   border-left: solid 10px #7F9E56; 
   background: #969696 url('../images/navCorner.png') right -36px no-repeat; 
   color: #F6FF97;
+  text-decoration: none;
 }
 
 #block-system-navigation li.expanded ul.menu
@@ -140,6 +141,6 @@ h2.block-title /* Block title */ {
 #block-user-new /* "Who's new" block for a list of the newest users */ {
 }
 
-#block-user-online /* "Who's online" block for a list of the online users */ {
+#block-user-online, #block-block-2 /* "Who's online" block for a list of the online users */ {
   margin-left: 25px;
 }

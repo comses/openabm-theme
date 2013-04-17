@@ -38,6 +38,11 @@ html.js fieldset.collapsible legend a {
 
 .button a {
   color: black !important;
+  font-weight: normal;
+}
+
+.button a:hover {
+  text-decoration: none;
 }
 
 /* Shadowbox override */
