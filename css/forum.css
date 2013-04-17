@@ -1,0 +1,39 @@
+.forum-pager .pager {
+  width: auto;
+}
+
+.forum-pager .pager a, .forum-pager .pager li.pager-current {
+  padding: 3px 6px;
+}
+
+#forum-pager-top .pager{
+  padding: 0;
+}
+
+#forum-pager-bottom .pager{
+  padding: 0;
+}
+
+.forum-table td, .forum-table th {
+  padding: 0.5em;
+}
+
+.forum-table td.views-field-title a span {
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.forum-table div.forum-name {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.forum-table-topics td.views-field-comment-count,
+.forum-table-topics td.views-field-totalcount {
+  width: 50px;
+}
+
+.forum-table-topics td.views-field-last-updated {
+  width: 25%;
+}
+

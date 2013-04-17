@@ -68,10 +68,9 @@ stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
 
-stylesheets[all][]   = css/advanced-forum.images.css
-stylesheets[all][]   = css/advanced-forum.style.css
 stylesheets[all][]   = css/book.css
-;stylesheets[all][]   = css/messages.css
+stylesheets[all][]   = css/calendar.css
+stylesheets[all][]   = css/forum.css
 stylesheets[all][]   = css/misc.css
 stylesheets[all][]   = css/navigation.css
 stylesheets[all][]   = css/openabm-biblio.css

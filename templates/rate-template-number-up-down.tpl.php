@@ -38,13 +38,16 @@
  * - $info: String with user readable information (built in preprocess function).
  */
 ?>
+<?php
+if ($display_options['description']) {
+  print '<div class="rate-description">' . $display_options['description'] . '</div>';
+}
+?>
 
-<?php if ($display_options['description']): ?>
-  <?php print '<div class="rate-description">' . $display_options['description'] . '</div>'; ?>
-<?php endif; ?>
+<?php print $up_button; ?>
 
-<?php print theme('item_list', array('items' => $buttons)); ?>
+<div class="rate-number-up-down-rating <?php print $score_class ?>"><?php print $score; ?></div>
 
-<?php if ($info): ?>
-  <?php print '<div class="rate-info">' . $info . '</div>'; ?>
-<?php endif; ?>
+<?php print $down_button; ?>
+
+<div class="rate-info" ><?php print $results['up']; ?> of <?php print $results['count']; ?> people found this comment useful.</div>

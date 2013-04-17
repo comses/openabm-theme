@@ -96,6 +96,10 @@
 
   <?php if (!empty($title_suffix)) print render($title_suffix); ?>
 
+  <?php if ($status == 'comment-unpublished'): ?>
+    <div class="unpublished"><?php print t('Unpublished'); ?></div>
+  <?php endif; ?>
+
   <?php if (!empty($content)): ?>
     <div class='comment-content clearfix'>
       <?php 
