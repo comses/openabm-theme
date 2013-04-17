@@ -1,6 +1,10 @@
+div.rate-widget {
+  margin: 1em 0 0.5em 2em;
+}
+
 .rate-info, .rate-description {
   clear: left;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #666;
 }
 
@@ -17,8 +21,62 @@ div.rate-widget div.item-list li{
 }
 
 div.rate-widget div.rate-info {
+  margin-top: 0.5em;
 }
 
 div.rate-widget div.rate-description {
   margin-bottom: 0.5em;
+}
+
+.rate-number-up-down-btn-up {
+  display: block;
+  float: left;
+  background: url(../images/arrows.png) 0 -22px no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  text-indent: 100px;
+  overflow: hidden;
+}
+
+.rate-number-up-down-btn-up.rate-voted {
+  background-position: 0 -66px;
+}
+
+.rate-number-up-down-btn-down {
+  display: block;
+  float: left;
+  background: url(../images/arrows.png) -20px -22px no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  text-indent: 100px;
+  overflow: hidden;
+}
+
+.rate-number-up-down-btn-down.rate-voted {
+  background-position: -20px -66px;
+}
+
+.rate-number-up-down-rating {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 0.5em 0.5em;
+}
+
+.rate-number-up-down-rating-up {
+  display: block;
+  float: left;
+  width: 45px;
+  text-align: right;
+  padding-top: 3px;
+}
+
+.rate-number-up-down-rating-down {
+  display: block;
+  float: left;
+  width: 45px;
+  text-align: left;
+  padding-top: 3px;
 }

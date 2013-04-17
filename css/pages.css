@@ -277,6 +277,26 @@ div.pager {
 #page .pager a:hover {
   background: #eee;
   color:#333;
+}
+
+ul.links li {
+  padding: 0;
+}
+
+#page .pager ul.pager-list li:first-child a,
+#page .pager ul.pager-list li.pager-current:first-child {
+  -moz-border-radius:5px 0px 0px 5px;
+  -webkit-border-radius:5px 0px 0px 5px;
+}
+
+#page .pager ul.pager-links li:last-child a {
+  -moz-border-radius:0px 5px 5px 0px;
+  -webkit-border-radius:0px 5px 5px 0px;
+}
+
+#page .pager a:hover {
+  background: #eee;
+  color:#333;
   text-decoration: none;
 }
 

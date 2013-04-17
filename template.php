@@ -327,6 +327,10 @@ function openabm_views_mini_pager($vars) {
 #  }
 #}
 
+#function openabm_comment_form($form) {
+#  $form['#redirect'] = '/model/' . arg(1) . '/version/' . arg(3) . '/view';
+#}
+
 /**
  * Override or insert variables into the html templates.
  *
@@ -367,18 +371,14 @@ function openabm_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function openabm_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
   // Optionally, run node-type-specific preprocess functions, like
   // openabm_preprocess_node_page() or openabm_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
-  }
+  #$function = __FUNCTION__ . '_' . $variables['node']->type;
+  #if (function_exists($function)) {
+  #  $function($variables, $hook);
+  #}
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.
