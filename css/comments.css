@@ -111,7 +111,7 @@
   border-top: none;
 }
 
-.comment-links ul.links li.comment-reply, .comment-links ul.links.inline li.comment_forbidden /* Comment links. See also the ul.links declaration in the pages.css. */ {
+.comment-links ul.links li.comment-edit, .comment-links ul.links li.comment-delete, .comment-links ul.links li.comment-reply, .comment-links ul.links.inline li.comment_forbidden /* Comment links. See also the ul.links declaration in the pages.css. */ {
   display: none;
 }
 
