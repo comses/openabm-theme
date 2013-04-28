@@ -36,12 +36,12 @@ html.js fieldset.collapsible legend a {
   white-space: nowrap;
 }
 
-.button a {
+.button a, a.button {
   color: black !important;
   font-weight: normal;
 }
 
-.button a:hover {
+.button a:hover, a.button:hover {
   text-decoration: none;
 }
 
