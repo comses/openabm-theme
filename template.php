@@ -409,3 +409,21 @@ function openabm_preprocess_block(&$variables, $hook) {
 }
 // */
 
+/**
+ * Override or insert variables into the views templates.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("views_view" in this case.)
+ */
+function openabm_preprocess_views_view(&$variables, $hook) {
+  $view = $variables['view'];
+  // If it is the view you want to change
+  if ($view->name == 'model_library') {
+    if ($view->current_display == 'page_1') {
+      // Override display's title
+      $view->build_info['title'] = check_plain(format_username(user_load(arg(1)))) . '\'s Models';
+    }
+  }
+}
