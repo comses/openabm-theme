@@ -35,6 +35,38 @@
   
 }
 
+.view-search-content a {
+  text-decoration: underline;
+}
+
+.view-search-content div.view-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #342F65;
+}
+
+.view-search-content div.views-row {
+  margin-bottom: 2em;
+}
+
+.view-search-content div.views-field-field-model-image {
+  float: right;
+  margin-left: 10px;
+}
+
+.view-search-content div.search-result-status {
+  margin: 0.5em 0;
+  color: #342F65;
+  font-weight: bold;
+}
+
+.view-search-content div.search-result-info, .view-search-content div.search-result-info a {
+  color: #527037;
+  font-weight: bold;
+}
+
+
+
 .view-education-books .views-field-title a
 {
   font-weight: bold;

@@ -22,6 +22,21 @@ h2.pane-title
   margin-top: 5px;
 }
 
+div.pane-facetapi {
+  background: #F1F1F1;
+  padding: 10px;
+}
+
+.pane-facetapi h2.pane-title {
+  background: none;
+  font-size: 1.1em;
+  border-bottom: 1px solid #CCC;
+}
+
+div.pane-facetapi ul.facetapi-facetapi-links a.facetapi-limit-link {
+  float: right;
+}
+
 .pane-announcements-panel-pane-1 .views-field-title a, .pane-education .views-field-title a, .pane-site-updates-panel-pane-1 .views-field-title a, .pane-abm-news-panel-pane-1 .views-field-title a 
 {
   font-weight: bold;

@@ -4,6 +4,14 @@
  * modules/search/search.css
  */
 
+#block-views-2c2003689c103c22f0645fdf92869a5d .views-exposed-widgets label, #views-exposed-form-search-users-results-pane div.views-exposed-widget label {
+  display: none;
+}
+
+#block-views-b24d00ce98eb822431540599f48db9e1 .views-widget-filter-search_api_multi_index {
+  display: none;
+}
+
 .search-form {
   margin-bottom: 1em;
 }

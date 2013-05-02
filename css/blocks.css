@@ -68,8 +68,8 @@ h2.block-title /* Block title */ {
 #block-profile-author-information /* "Author information" block for the profile of the page's author */ {
 }
 
-#block-search-form /* "Search form" block */ {
-  margin: -70px 20px -10px 0;
+#block-search-form, #block-views-2c2003689c103c22f0645fdf92869a5d /* "Search form" block */ {
+  margin: -60px 20px -10px 0;
   float: right;
   text-align: right;
 }
