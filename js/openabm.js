@@ -45,16 +45,16 @@
       }
     });
   });
-
-  window.onload=function(){
-    Nifty("ul.button a", "transparent");
-    Nifty("a.button", "transparent");
-    Nifty("div.modelstatus", "transparent"); 
-    Nifty("div.versions-list", "transparent");
-  }
-
-  function DoNav(url)
-  {
-    document.location.href = url;
-  }
 })(jQuery);
+
+window.onload=function(){
+  Nifty("ul.button a", "transparent");
+  Nifty("a.button", "transparent");
+  Nifty("div.modelstatus", "transparent"); 
+  Nifty("div.versions-list", "transparent");
+}
+
+function DoNav(url)
+{
+  document.location.href = url;
+}
