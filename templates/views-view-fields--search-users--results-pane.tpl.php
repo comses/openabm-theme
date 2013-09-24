@@ -31,12 +31,14 @@ $user_name = (isset($fields['profile_main_field_profile2_lastname']->content) ? 
 ?>
 <!-- RealName - Admin/Board/Member badges -->
   <h2>
-    <a href="<?php print $user_url ?>">
+    <a href="<?php if ($user_name > '') print '/user/' . $user_uid; else print $fields['name']->content; ?>">
       <?php print $user_name; ?>
     </a>
   </h2>
 
 <!-- Role Badges -->
+
+<div class="search-result-info">
 
 <!-- Institution -->
   <?php if (!empty($fields['profile_main_field_profile2_institutions_title']->separator)): ?>
@@ -48,6 +50,8 @@ $user_name = (isset($fields['profile_main_field_profile2_lastname']->content) ? 
     <?php print $fields['profile_main_field_profile2_institutions_title']->content; ?>
   <?php print $fields['profile_main_field_profile2_institutions_title']->wrapper_suffix; ?>
 
+</div>
+ 
 <!-- Member since: -->
 
 <!-- Research Description -->
